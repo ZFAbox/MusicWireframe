@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicWireframe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yei-dj-rtC">
+                                <rect key="frame" x="20" y="124" width="362" height="362"/>
+                                <color key="backgroundColor" red="0.71272935780000002" green="0.3740505543" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yei-dj-rtC" secondAttribute="height" multiplier="1:1" id="e3G-Ak-qMu"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMp-WM-i1e">
+                                <rect key="frame" x="30" y="532" width="84" height="84"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TMp-WM-i1e" secondAttribute="height" multiplier="1:1" id="5Tm-qk-5aN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BM-EK-uv3">
+                                <rect key="frame" x="159" y="532" width="84" height="84"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6BM-EK-uv3" secondAttribute="height" multiplier="1:1" id="3ul-mE-VGY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofG-0S-y0U">
+                                <rect key="frame" x="288" y="532" width="84" height="84"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ofG-0S-y0U" secondAttribute="height" multiplier="1:1" id="S4f-20-tOt"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sdp-dF-Wvb">
+                                <rect key="frame" x="44" y="546" width="314" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-vI-Pje">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="AEf-vI-Pje" secondAttribute="height" multiplier="1:1" id="7iR-TE-CNT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvj-Gv-NK3">
+                                        <rect key="frame" x="129" y="0.0" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tvj-Gv-NK3" secondAttribute="height" multiplier="1:1" id="tb6-OQ-Ng2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-VE-Byt">
+                                        <rect key="frame" x="258" y="0.0" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Waq-VE-Byt" secondAttribute="height" multiplier="1:1" id="sp0-El-W0r"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sdp-dF-Wvb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="3Yn-x9-u99"/>
+                            <constraint firstItem="6BM-EK-uv3" firstAttribute="height" secondItem="tvj-Gv-NK3" secondAttribute="height" multiplier="1.5" id="4Hg-kY-WQx"/>
+                            <constraint firstItem="ofG-0S-y0U" firstAttribute="height" secondItem="Waq-VE-Byt" secondAttribute="height" multiplier="1.5" id="AEP-rV-bab"/>
+                            <constraint firstItem="TMp-WM-i1e" firstAttribute="centerY" secondItem="AEf-vI-Pje" secondAttribute="centerY" id="D9g-IQ-s32"/>
+                            <constraint firstItem="ofG-0S-y0U" firstAttribute="centerX" secondItem="Waq-VE-Byt" secondAttribute="centerX" id="GHA-WT-Lse"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sdp-dF-Wvb" secondAttribute="trailing" constant="44" id="KC1-2e-qTU"/>
+                            <constraint firstItem="Yei-dj-rtC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NeD-ui-8tJ"/>
+                            <constraint firstItem="ofG-0S-y0U" firstAttribute="centerY" secondItem="Waq-VE-Byt" secondAttribute="centerY" id="Qyv-nK-g8b"/>
+                            <constraint firstItem="TMp-WM-i1e" firstAttribute="centerX" secondItem="AEf-vI-Pje" secondAttribute="centerX" id="R4E-za-jqf"/>
+                            <constraint firstItem="TMp-WM-i1e" firstAttribute="height" secondItem="AEf-vI-Pje" secondAttribute="height" multiplier="1.5" id="SfC-Pt-ysH"/>
+                            <constraint firstItem="sdp-dF-Wvb" firstAttribute="top" secondItem="Yei-dj-rtC" secondAttribute="bottom" constant="60" id="lbD-aK-THk"/>
+                            <constraint firstItem="6BM-EK-uv3" firstAttribute="centerY" secondItem="tvj-Gv-NK3" secondAttribute="centerY" id="m5L-k6-aFe"/>
+                            <constraint firstItem="Yei-dj-rtC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wTt-lz-ofX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yei-dj-rtC" secondAttribute="trailing" constant="20" id="xWr-Yz-jGE"/>
+                            <constraint firstItem="6BM-EK-uv3" firstAttribute="centerX" secondItem="tvj-Gv-NK3" secondAttribute="centerX" id="zQV-at-lzW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="76"/>
+        <image name="forward.fill" catalog="system" width="128" height="76"/>
+        <image name="play.fill" catalog="system" width="120" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
