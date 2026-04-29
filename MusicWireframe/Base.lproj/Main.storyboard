@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,63 +15,85 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicWireframe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yei-dj-rtC">
-                                <rect key="frame" x="20" y="124" width="362" height="362"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="66B2F1DE-044A-42C1-A635-205343374460_1_105_c" translatesAutoresizingMaskIntoConstraints="NO" id="Yei-dj-rtC">
+                                <rect key="frame" x="20" y="96" width="374" height="374"/>
                                 <color key="backgroundColor" red="0.71272935780000002" green="0.3740505543" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Yei-dj-rtC" secondAttribute="height" multiplier="1:1" id="e3G-Ak-qMu"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMp-WM-i1e">
-                                <rect key="frame" x="30" y="532" width="84" height="84"/>
+                                <rect key="frame" x="30" y="516" width="83.5" height="83.5"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TMp-WM-i1e" secondAttribute="height" multiplier="1:1" id="5Tm-qk-5aN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BM-EK-uv3">
-                                <rect key="frame" x="159" y="532" width="84" height="84"/>
+                                <rect key="frame" x="165.5" y="516" width="83" height="83.5"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6BM-EK-uv3" secondAttribute="height" multiplier="1:1" id="3ul-mE-VGY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofG-0S-y0U">
-                                <rect key="frame" x="288" y="532" width="84" height="84"/>
+                                <rect key="frame" x="300.5" y="516" width="83.5" height="83.5"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ofG-0S-y0U" secondAttribute="height" multiplier="1:1" id="S4f-20-tOt"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sdp-dF-Wvb">
-                                <rect key="frame" x="44" y="546" width="314" height="56"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="sdp-dF-Wvb">
+                                <rect key="frame" x="44" y="530" width="326" height="55.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-vI-Pje">
-                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="AEf-vI-Pje" secondAttribute="height" multiplier="1:1" id="7iR-TE-CNT"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="HE0-ZZ-KgD"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIv-kc-uRS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvj-Gv-NK3">
-                                        <rect key="frame" x="129" y="0.0" width="56" height="56"/>
+                                        <rect key="frame" x="135.5" y="0.0" width="55.5" height="55.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tvj-Gv-NK3" secondAttribute="height" multiplier="1:1" id="tb6-OQ-Ng2"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="pause.fill" catalog="system" variableValue="0.0"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="26"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="iEY-vE-jco"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BwA-QP-bJp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-VE-Byt">
-                                        <rect key="frame" x="258" y="0.0" width="56" height="56"/>
+                                        <rect key="frame" x="270.5" y="0.0" width="55.5" height="55.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Waq-VE-Byt" secondAttribute="height" multiplier="1:1" id="sp0-El-W0r"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="epm-Lg-SbG"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VC8-MU-gfl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -94,6 +118,15 @@
                             <constraint firstItem="6BM-EK-uv3" firstAttribute="centerX" secondItem="tvj-Gv-NK3" secondAttribute="centerX" id="zQV-at-lzW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="Yei-dj-rtC" id="BhS-2Z-LHz"/>
+                        <outlet property="forwardBackgroundView" destination="ofG-0S-y0U" id="NxB-gM-xps"/>
+                        <outlet property="forwardButton" destination="Waq-VE-Byt" id="gxB-Fq-32k"/>
+                        <outlet property="playBackgroundView" destination="6BM-EK-uv3" id="UEa-fN-xX8"/>
+                        <outlet property="playButton" destination="tvj-Gv-NK3" id="2Ub-qW-1sU"/>
+                        <outlet property="reverseBackgroundView" destination="TMp-WM-i1e" id="tmh-yI-Dce"/>
+                        <outlet property="reverseButton" destination="AEf-vI-Pje" id="XwD-vu-3XY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,9 +134,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="66B2F1DE-044A-42C1-A635-205343374460_1_105_c" width="512" height="384"/>
         <image name="backward.fill" catalog="system" width="128" height="76"/>
         <image name="forward.fill" catalog="system" width="128" height="76"/>
-        <image name="play.fill" catalog="system" width="120" height="128"/>
+        <image name="pause.fill" catalog="system" width="114" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
